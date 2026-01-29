@@ -5,6 +5,12 @@
 > [!NOTE]
 > This repo does not represent all professional projects I have made using the framework flutter, it simply is a collection of small practice projects used for learning purposes.
 
+## All Relevant Links
+
+[Flutter Documentation](https://docs.flutter.dev/)
+
+[Dart Documentation](https://dart.dev/docs)
+
 ## List of practice projects
 
 ### 1. [Default Project](./default_project)
