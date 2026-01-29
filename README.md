@@ -7,7 +7,12 @@
 
 ## List of practice projects
 
-### 1. [Introduction Demo](./documentation_introduction)
+### 1. [Default Project](./default_project)
+**Description:** This is the default project that is created when creating a flutter application for the first time.
+
+---
+
+### 2. [Introduction Demo](./documentation_introduction)
 **Description:** This project puts into practice the concepts taught in the introduction section of the Flutter documention.
 
 ---
