@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 class Product {
   const Product({required this.name});
 
-  final String name;
+  final String name;  // final --> Creates a constant
 }
 
+// typedef = A keyword used to define function types
 typedef CartChangedCallback = void Function(Product product, bool inCart);
 
 class ShoppingListItem extends StatelessWidget {
   ShoppingListItem({
-    required this.product,
+    required this.product,  // @required annotation (e.g. in java) is replaced by 'required' keyword
     required this.inCart,
     required this.onCartChanged,
   }) : super(key: ObjectKey(product));
@@ -106,15 +107,18 @@ class _ShoppingListState extends State<ShoppingList> {
   }
 }
 
+// Main method
 void main() {
   runApp(
     const MaterialApp(
       title: 'Shopping App',
       home: ShoppingList(
         products: [
-          Product(name: 'Eggs'),
-          Product(name: 'Flour'),
-          Product(name: 'Chocolate chips'),
+          Product(name: 'Pizza'),
+          Product(name: 'Rice'),
+          Product(name: 'Chocolate Chip Cookies'),
+          Product(name: 'Test'),  // These 2 'Product's 
+          Product(name: 'Test'),  // share the same State Object
         ],
       ),
     ),
